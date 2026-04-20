@@ -57,9 +57,7 @@ insert into course (COURSE_ID,STUDENT_ID,COURSENAME,TERM,STARTDATE,ENDDATE)
 values (331,2237, 'English',2, 
 to_date('2026-01-1', 'YYYY-MM-DD'),to_date('2026-05-19', 'YYYY-MM-DD'));
 
-//
-
-STUDENT 2234 DATA
+//STUDENT 2234 DATA
 insert into courseEvet (course_ID, eventType, dueDate, status)
 values (241, 'Assignment', to_date('2026-03-10','YYYY-MM-DD'), 'Pending');
 
@@ -102,7 +100,7 @@ VALUES ( 801, 2234,
   (SELECT TOPIC_ID FROM topic WHERE TOPICNAME = 'SQL'),
   TO_DATE('2026-03-01 10:00','YYYY-MM-DD HH24:MI'),
   TO_DATE('2026-03-01 12:00','YYYY-MM-DD HH24:MI'),
-  5;
+  5);
 
 INSERT INTO StudySession (SESSION_ID,STUDENT_ID,TOPIC_ID,STARTTIME,ENDTIME,FOCUSSCORE)
 VALUES (802,2235,
