@@ -25,6 +25,7 @@ create table courseEvet(
     primary key (event_ID),
     foreign key (course_ID) references course(course_ID),
     check (eventType in ('Assignment','Project','MidTerm','Quiz','Final'))
+    )
 
     create table topic(
     plan_ID  int not null,
